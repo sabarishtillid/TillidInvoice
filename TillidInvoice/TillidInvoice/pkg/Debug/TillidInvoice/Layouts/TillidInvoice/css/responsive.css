@@ -1,0 +1,17 @@
+@media (max-width:767px) {
+	.stick_leftbar{ display:none; z-index:106;}
+	.stick_topbar, .fluidcontr{ left:0px; position:inherit;}
+	.fluidcontr{ padding:0px;}
+	.stickyicon{ z-index:107;}
+	.stick_topbar{ position:fixed;}
+	.fluidcontr{ padding-top:50px;}
+	.overlay.show{ position:fixed; display:block !important;}
+}
+
+@keyframes spritebegone{0%{top:13px;left:0;width:200px;height:100px;opacity:1;}19%{top:3px;left:0;width:240px;height:120px;opacity:1;}20%{top:0px;left:0;width:240px;height:120px;opacity:1;}100%{top:73px;left:0;width:0;height:0;opacity:0;}}
+
+@keyframes sectionFadeIn{0%{opacity:0;}100%{opacity:1;}}
+@keyframes sectionUp{0%{top:120px;}5%{top:120px;}65%{top:20px;}75%{top:15px;}99%{top:20px;}}
+@keyframes myfirst {0% {opacity: 0.25; padding:0px;background-color:green;}25% {opacity: 0.50; padding:5px;}50% {opacity: 0.75; padding:10px;}100% {opacity: 1; padding:15px; background-color:green;}}
+
+

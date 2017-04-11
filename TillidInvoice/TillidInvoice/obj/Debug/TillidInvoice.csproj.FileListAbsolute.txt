@@ -1,0 +1,4 @@
+C:\Users\sabarishbabu\Documents\Visual Studio 2012\Projects\TillidInvoice\TillidInvoice\bin\Debug\TillidInvoice.pdb
+C:\Users\sabarishbabu\Documents\Visual Studio 2012\Projects\TillidInvoice\TillidInvoice\obj\Debug\TillidInvoice.dll
+C:\Users\sabarishbabu\Documents\Visual Studio 2012\Projects\TillidInvoice\TillidInvoice\obj\Debug\TillidInvoice.pdb
+C:\Users\sabarishbabu\Documents\Visual Studio 2012\Projects\TillidInvoice\TillidInvoice\obj\Debug\TillidInvoice.csprojResolveAssemblyReference.cache

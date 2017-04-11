@@ -1,0 +1,145 @@
+body{ position:relative; height:100%; color:#333; font-family: 'Lato', sans-serif; font-size:13px;}
+*:hover{ transition:all ease 0.1s;}
+
+* {transition: all 0.5s ease-out; -webkit-transition: all 0.5s ease-out;}
+
+/*Topbar Starts*/
+.stick_topbar{ position:fixed; top:0px; left:210px; right:0px; background-color:rgba(45,96,149,0.5); z-index:100;}
+.stick_topbar ul{ text-align:center; padding:0px; margin:0px;}
+.stick_topbar ul li{ padding:0px;}
+.stick_topbar ul li a{ padding:10px; display:inline-block; font-size:20px; color:#fff;}
+.stick_topbar ul li a:hover{ background-color:rgba(256,256,256,0.2);}
+/*Topbar Ends*/
+
+/*Leftbar Starts*/
+.stick_leftbar{ position:fixed; top:0px; left:0px; bottom:0px; background-color:rgba(45,96,149,1); min-width:210px; border-right:1px solid rgba(245,245,245,0.1);}
+.stick_leftbar ul{ padding:0px; margin:0px;}
+.stick_leftbar ul ul li a, .stick_leftbar ul ul ul li  a{ padding-left:30px !important;}
+.stick_leftbar .list-group-item{ background-color:transparent; border:none; padding:0px;}
+.stick_leftbar .list-group-item .glyphicon{ position:absolute; right:10px; top:13px;}
+.stick_leftbar .list-group > .list-group-item:first-child a{ padding:10px 10px; text-transform:uppercase;}
+.stick_leftbar .list-group > .list-group-item:first-child a span:first-child{ border:1px solid rgba(256,256,256,0.2); display:inline-block;}
+.stick_leftbar .list-group > .list-group-item:first-child a span:last-child{ padding-left:10px;}
+.stick_leftbar .list-group-item a{ padding:10px 10px 10px 15px; display:block; color:#fff; font-size:14px;}
+.stick_leftbar .list-group-item a:hover{ text-decoration:none; background-color:rgba(256,256,256,0.2);}
+/*Leftbar Ends*/
+
+/*Main Content Starts*/
+.fluidcontr{ position:absolute; left:210px; right:0px; top:0px; background-color:#f3f5fa; padding:65px 15px 15px 15px;}
+.box{ background-color:#fff; -moz-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1); box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1); margin:15px 0px; padding:15px; overflow:hidden;}
+.centerpart{ position:relative;}
+.rightborder{ position:absolute; background:url(../images/right_border.png) repeat-y; width:1px; top:-17px; bottom:-15px; right:0px;}
+.tablecntr{ display:table; width:100%;}
+.tablecell{ display:table-cell;}
+.add{ min-height:230px; position:relative; position: relative; width: 100%; height: 100%;
+	transition: 0.5s ease-out;
+	-webkit-transition: 0.5s ease-out;
+	-moz-transition: 0.5s ease-out;
+	-o-transition: 0.5s ease-out;
+	-ms-transition: 0.5s ease-out;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	backface-visibility: visible;
+	-webkit-backface-visibility: visible;
+	-moz-backface-visibility: visible;
+	-o-backface-visibility: visible;
+	-ms-backface-visibility: visible;
+}
+.bottomSection{  position: relative; min-height: 100px; width: 100%; visibility: hidden; text-align:center;}
+.spriteOuterDiv{ position: absolute; top: 0; left: 0; width: 100%;}	
+.add .close{ position:absolute; right:5px; top:5px; cursor:pointer; font-size:30px; color:rgba(162,162,162,0.8); opacity:0;}
+.add:hover .close{ opacity:0.8; transition:opacity ease-in-out 1s;}
+.add:hover .close:hover{ opacity:1; transition:opacity ease-in-out 0.3s;}
+.topSection{ position: relative; min-height: 100px; top: 140px; width: 100%;
+	animation: sectionFadeIn 0.66s 0.225s both;
+	-webkit-animation: sectionFadeIn 0.66s 0.225s both;
+	-moz-animation: sectionFadeIn 0.66s 0.225s both;
+	-o-animation: sectionFadeIn 0.66s 0.225s both;
+	-ms-animation: sectionFadeIn 0.66s 0.225s both; text-align:center;
+}
+.topSection h4{ margin:0px;}
+.goMobileSprite{ background-image: url("../images/outer_div_img.png");}
+.sprite { background-repeat: no-repeat; display: table; margin: 0 auto; position: relative; top: 23px; left: 0; background-size: cover; width: 200px; height: 100px;
+	animation: sectionFadeIn 0.33s 0.225s both;
+	-webkit-animation: sectionFadeIn 0.33s 0.225s both;
+	-moz-animation: sectionFadeIn 0.33s 0.225s both;
+	-o-animation: sectionFadeIn 0.33s 0.225s both;
+	-ms-animation: sectionFadeIn 0.33s 0.225s both;
+}
+
+.add:hover .sprite{top: 82.5px; left: 160px; width: 0; height: 0;
+	animation: spritebegone 0.5s;
+	-webkit-animation: spritebegone 0.5s;
+	-moz-animation: spritebegone 0.5s;
+	-o-animation: spritebegone 0.5s;
+	-ms-animation: spritebegone 0.5s;
+}
+
+.add:hover .topSection{ top: 20px;
+	animation: sectionUp 0.66s ease-in;
+	-webkit-animation: sectionUp 0.66s ease-in;
+	-moz-animation: sectionUp 0.66s ease-in;
+	-o-animation: sectionUp 0.66s ease-in;
+	-ms-animation: sectionUp 0.66s ease-in;
+}
+.add:hover .bottomSection{ visibility: visible; top: 20px;
+	animation: sectionUp 0.66s ease-in;
+	-webkit-animation: sectionUp 0.66s ease-in;
+	-moz-animation: sectionUp 0.66s ease-in;
+	-o-animation: sectionUp 0.66s ease-in;
+	-ms-animation: sectionUp 0.66s ease-in;
+}
+.add:hover .spriteInnerDiv{ top: 82.5px; left: 160px; width: 0; height: 0;
+	animation: spritebegone 0.5s;
+	-webkit-animation: spritebegone 0.5s;
+	-moz-animation: spritebegone 0.5s;
+	-o-animation: spritebegone 0.5s;
+	-ms-animation: spritebegone 0.5s;
+}
+.add .box_inner_top p:last-child, .add .box_inner_bot p:last-child{ margin-bottom:0px;}
+.accord{ position:relative; margin-top:10px;}
+.accord span{ position:absolute; right:10px; top:-5px;}
+.accord span a{ font-size:13px; color:#000;}
+
+.incomecol{ 
+    transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+.rangelist { margin:0px; padding:0px; height:45px; display:table; margin-bottom:60px;}
+.rangelist li{ display:table-cell;}  
+.rangelist .rangetxt{ display:block; position:relative; height:100%;}
+.rangetxt > span{ color:transparent;}
+.rangetxt_val{ position:absolute; bottom:-60px; left:0px; right:0px;}
+h4.rupess, p.duetxt{ text-transform:uppercase;}
+h4.rupess{ color:rgba(198,198,198,0.9); margin:0px 0px 10px;}
+p.duetxt{ color:rgba(198,198,198,0.7); margin:0px;}
+.yellow{ background-color:rgba(239,179,40,0.4);}
+.red{ background-color:rgba(227,61,67,0.4);}
+.white{ background-color:rgba(256,256,256,0.4);}
+.green{ background-color:rgba(86,179,73,0.4);}
+.img_center{ display:block; text-align:right;}
+.bank{ margin:15px 0px;}
+h3.brdrhead{ margin:0px 0 25px; padding-bottom:10px; border-bottom:1px solid #c7c7c7;}
+.normalbtn{ padding:6px 8px;}
+.bank_list li{ border:none; border-bottom:1px solid #dcdcdc; background:transparent;}
+.bank_list li.list-group-item:hover, .bank_list li.list-group-item.active, .bank_list li.list-group-item.active:hover, .bank_list li.list-group-item.active:focus{ background-color:rgba(45,96,149,0.1); border-color:#dcdcdc;}
+.bank_list .rupess, .bank .duetxt{ margin:0px; text-transform:none;}
+.bank_list .rupess{ font-weight:bold; font-size:13px; margin-bottom:5px;}
+.bank .duetxt{ font-size:12px;} 
+/*Main Content Ends*/
+
+.overlay{ background-color:rgba(0,0,0,0.5); position:absolute; left:0px; top:49px; right:0px; bottom:0px; z-index:101;}
+.stickyicon .glyphicon{ color:#fff;}
+.stickyicon{ position:fixed; left: 15px; top: 10px; font-size: 20px; transition:left ease-in-out 0.5s;}
+.stickyicon.open{ left:180px;}
+.overlay, .overlay.show{ display:none !important;}
+
+/*Footer Starts*/
+.footer{ position:relative; margin:15px 0px;}
+.footer .copyrights{ position:absolute; left:15px; top:0px; font-size:12px;}
+.footer_lnks{ text-align:center; margin:0px; padding:0px;}
+.footer_lnks a{ font-size:12px; color:#333;}
+/*Footer Ends*/
+

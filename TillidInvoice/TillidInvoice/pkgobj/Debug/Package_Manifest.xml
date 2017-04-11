@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="b06efd4e-3040-47b6-90b9-57d1516a2c1e" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="TillidInvoice.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="TillidInvoice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0f28ad7067454e4" Namespace="TillidInvoice.Custom_WebParts.TopNavigation" TypeName="*" />
+        <SafeControl Assembly="TillidInvoice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0f28ad7067454e4" Namespace="TillidInvoice.Custom_WebParts.Customers" TypeName="*" />
+        <SafeControl Assembly="TillidInvoice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0f28ad7067454e4" Namespace="TillidInvoice.Custom_WebParts.CustomerCreation" TypeName="*" />
+        <SafeControl Assembly="TillidInvoice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0f28ad7067454e4" Namespace="TillidInvoice.Custom_WebParts.Project" TypeName="*" />
+        <SafeControl Assembly="TillidInvoice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0f28ad7067454e4" Namespace="TillidInvoice.Custom_WebParts.Project_Module.ProjectCreation" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\TillidInvoice\fonts\fontawesome-webfont.eot" />
+    <TemplateFile Location="Layouts\TillidInvoice\fonts\fontawesome-webfont.ttf" />
+    <TemplateFile Location="Layouts\TillidInvoice\fonts\fontawesome-webfont.woff" />
+    <TemplateFile Location="Layouts\TillidInvoice\fonts\fontawesome-webfont.woff2" />
+    <TemplateFile Location="Layouts\TillidInvoice\fonts\FontAwesome.otf" />
+    <TemplateFile Location="Layouts\TillidInvoice\fonts\glyphicons-halflings-regular.eot" />
+    <TemplateFile Location="Layouts\TillidInvoice\fonts\glyphicons-halflings-regular.ttf" />
+    <TemplateFile Location="Layouts\TillidInvoice\fonts\glyphicons-halflings-regular.woff" />
+    <TemplateFile Location="Layouts\TillidInvoice\fonts\glyphicons-halflings-regular.woff2" />
+    <TemplateFile Location="Layouts\TillidInvoice\fonts\Pe-icon-7-stroke.eot" />
+    <TemplateFile Location="Layouts\TillidInvoice\fonts\Pe-icon-7-stroke.ttf" />
+    <TemplateFile Location="Layouts\TillidInvoice\fonts\Pe-icon-7-stroke.woff" />
+    <TemplateFile Location="Layouts\TillidInvoice\css\bootstrap.css" />
+    <TemplateFile Location="Layouts\TillidInvoice\css\bootstrap.min.css" />
+    <TemplateFile Location="Layouts\TillidInvoice\css\font-awesome.min.css" />
+    <TemplateFile Location="Layouts\TillidInvoice\css\main.css" />
+    <TemplateFile Location="Layouts\TillidInvoice\css\Pe-icon-7-stroke.css" />
+    <TemplateFile Location="Layouts\TillidInvoice\css\responsive.css" />
+    <TemplateFile Location="Layouts\TillidInvoice\fonts\fontawesome-webfont.svg" />
+    <TemplateFile Location="Layouts\TillidInvoice\fonts\glyphicons-halflings-regular.svg" />
+    <TemplateFile Location="Layouts\TillidInvoice\fonts\Pe-icon-7-stroke.svg" />
+    <TemplateFile Location="Layouts\TillidInvoice\images\appStoreEN.png" />
+    <TemplateFile Location="Layouts\TillidInvoice\images\bar_graph.jpg" />
+    <TemplateFile Location="Layouts\TillidInvoice\images\circle_graph.jpg" />
+    <TemplateFile Location="Layouts\TillidInvoice\images\favicon.png" />
+    <TemplateFile Location="Layouts\TillidInvoice\images\googlePlayEN.png" />
+    <TemplateFile Location="Layouts\TillidInvoice\images\logo.png" />
+    <TemplateFile Location="Layouts\TillidInvoice\images\outer_div_img.png" />
+    <TemplateFile Location="Layouts\TillidInvoice\images\right_border.png" />
+    <TemplateFile Location="Layouts\TillidInvoice\js\bootstrap.js" />
+    <TemplateFile Location="Layouts\TillidInvoice\js\bootstrap.min.js" />
+    <TemplateFile Location="Layouts\TillidInvoice\js\jquery-1.12.0.min.js" />
+    <TemplateFile Location="Layouts\TillidInvoice\js\jquery-ui.js" />
+    <TemplateFile Location="Layouts\TillidInvoice\js\npm.js" />
+    <TemplateFile Location="Layouts\TillidInvoice\js\script.js" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="TillidInvoice_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

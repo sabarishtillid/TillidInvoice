@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="b06efd4e-3040-47b6-90b9-57d1516a2c1e" solutionId="b06efd4e-3040-47b6-90b9-57d1516a2c1e" resetWebServer="false" sharePointProductVersion="15.0" name="TillidInvoice" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="4567cb00-bdc7-4dbe-b64c-547ec8863836" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="4d0bfcbf-032e-4b5e-91ee-eac4008440e4" />
+  </projectItems>
+</package>

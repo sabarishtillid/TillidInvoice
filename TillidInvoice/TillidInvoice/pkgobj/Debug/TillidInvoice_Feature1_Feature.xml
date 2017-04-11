@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="ffaff571-936d-4985-8095-ecff39861cb7" Scope="Site" Title="TillidInvoice Feature1">
+  <ElementManifests>
+    <ElementManifest Location="TopNavigation\Elements.xml" />
+    <ElementFile Location="TopNavigation\TopNavigation.webpart" />
+    <ElementManifest Location="CustomersDetails\Elements.xml" />
+    <ElementFile Location="CustomersDetails\Customers.webpart" />
+    <ElementManifest Location="CustomerCreation\Elements.xml" />
+    <ElementFile Location="CustomerCreation\CustomerCreation.webpart" />
+    <ElementManifest Location="Project\Elements.xml" />
+    <ElementFile Location="Project\Project.webpart" />
+    <ElementManifest Location="ProjectCreation\Elements.xml" />
+    <ElementFile Location="ProjectCreation\ProjectCreation.webpart" />
+  </ElementManifests>
+</Feature>

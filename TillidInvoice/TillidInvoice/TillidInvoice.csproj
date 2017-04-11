@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{09AE74AE-F438-431C-AAB8-BA071502B80C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TillidInvoice</RootNamespace>
+    <AssemblyName>TillidInvoice</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="microsoft.office.sharepoint.clientextensions, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\15\ISAPI\microsoft.office.sharepoint.clientextensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.DocumentManagement, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Client.DocumentManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Client.Publishing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Search, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Client.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Taxonomy, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Client.Taxonomy.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.UserProfiles, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Client.UserProfiles.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Linq, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Search, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Taxonomy, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Taxonomy.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Taxonomy.Intl, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Taxonomy.Intl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="TillidInvoice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0f28ad7067454e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TillidInvoice.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Custom WebParts\Clients Module\CustomerCreation\CustomerCreation.ascx.cs">
+      <DependentUpon>CustomerCreation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom WebParts\Clients Module\CustomerCreation\CustomerCreation.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerCreation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom WebParts\Clients Module\CustomersDetails\Customers.ascx.cs">
+      <DependentUpon>Customers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom WebParts\Clients Module\CustomersDetails\Customers.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Customers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom WebParts\Project Module\ProjectCreation\ProjectCreation.ascx.cs">
+      <DependentUpon>ProjectCreation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom WebParts\Project Module\ProjectCreation\ProjectCreation.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectCreation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom WebParts\Project Module\Project\Project.ascx.cs">
+      <DependentUpon>Project.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom WebParts\Project Module\Project\Project.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Project.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom WebParts\Navigations\TopNavigation\TopNavigation.ascx.cs">
+      <DependentUpon>TopNavigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom WebParts\Navigations\TopNavigation\TopNavigation.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TopNavigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Custom WebParts\Clients Module\CustomerCreation\CustomerCreation.webpart" />
+    <None Include="Custom WebParts\Clients Module\CustomerCreation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9a1e58ef-1d56-4781-99db-64e715757127}</SharePointProjectItemId>
+    </None>
+    <None Include="Custom WebParts\Clients Module\CustomersDetails\Customers.webpart" />
+    <None Include="Custom WebParts\Clients Module\CustomersDetails\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fa749081-b7da-411e-9df7-a5ec0464d713}</SharePointProjectItemId>
+    </None>
+    <None Include="Custom WebParts\Project Module\ProjectCreation\ProjectCreation.webpart" />
+    <None Include="Custom WebParts\Project Module\ProjectCreation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a0841ca7-f54e-4700-8632-bc0e1db8a759}</SharePointProjectItemId>
+    </None>
+    <None Include="Custom WebParts\Project Module\Project\Project.webpart" />
+    <None Include="Custom WebParts\Project Module\Project\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{31cf34d6-9ff4-41e0-a979-601c309740f8}</SharePointProjectItemId>
+    </None>
+    <None Include="Custom WebParts\Navigations\TopNavigation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f5f81ea5-09df-4e71-90f7-c0a2dac76a1d}</SharePointProjectItemId>
+    </None>
+    <None Include="Custom WebParts\Navigations\TopNavigation\TopNavigation.webpart" />
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{4567cb00-bdc7-4dbe-b64c-547ec8863836}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4d0bfcbf-032e-4b5e-91ee-eac4008440e4}</SharePointProjectItemId>
+    </None>
+    <None Include="Layouts\TillidInvoice\fonts\fontawesome-webfont.eot" />
+    <None Include="Layouts\TillidInvoice\fonts\fontawesome-webfont.ttf" />
+    <None Include="Layouts\TillidInvoice\fonts\fontawesome-webfont.woff" />
+    <None Include="Layouts\TillidInvoice\fonts\fontawesome-webfont.woff2" />
+    <None Include="Layouts\TillidInvoice\fonts\FontAwesome.otf" />
+    <None Include="Layouts\TillidInvoice\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Layouts\TillidInvoice\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Layouts\TillidInvoice\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Layouts\TillidInvoice\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Layouts\TillidInvoice\fonts\Pe-icon-7-stroke.eot" />
+    <None Include="Layouts\TillidInvoice\fonts\Pe-icon-7-stroke.ttf" />
+    <None Include="Layouts\TillidInvoice\fonts\Pe-icon-7-stroke.woff" />
+    <None Include="Package\Package.package">
+      <PackageId>{b06efd4e-3040-47b6-90b9-57d1516a2c1e}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Custom WebParts\Clients Module\CustomerCreation\CustomerCreation.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>CustomerCreation.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Custom WebParts\Clients Module\CustomerCreation\Elements.xml" />
+    <Content Include="Custom WebParts\Clients Module\CustomersDetails\Customers.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>Customers.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Custom WebParts\Clients Module\CustomersDetails\Elements.xml" />
+    <Content Include="Custom WebParts\Project Module\ProjectCreation\Elements.xml" />
+    <Content Include="Custom WebParts\Project Module\ProjectCreation\ProjectCreation.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>ProjectCreation.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Custom WebParts\Project Module\Project\Elements.xml" />
+    <Content Include="Custom WebParts\Project Module\Project\Project.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>Project.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Custom WebParts\Navigations\TopNavigation\Elements.xml" />
+    <Content Include="Custom WebParts\Navigations\TopNavigation\TopNavigation.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>TopNavigation.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="InvoiceMaster.html" />
+    <Content Include="Layouts\TillidInvoice\css\bootstrap.css" />
+    <Content Include="Layouts\TillidInvoice\css\bootstrap.min.css" />
+    <Content Include="Layouts\TillidInvoice\css\font-awesome.min.css" />
+    <Content Include="Layouts\TillidInvoice\css\main.css" />
+    <Content Include="Layouts\TillidInvoice\css\Pe-icon-7-stroke.css" />
+    <Content Include="Layouts\TillidInvoice\css\responsive.css" />
+    <Content Include="Layouts\TillidInvoice\fonts\fontawesome-webfont.svg" />
+    <Content Include="Layouts\TillidInvoice\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Layouts\TillidInvoice\fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="Layouts\TillidInvoice\images\appStoreEN.png" />
+    <Content Include="Layouts\TillidInvoice\images\bar_graph.jpg" />
+    <Content Include="Layouts\TillidInvoice\images\circle_graph.jpg" />
+    <Content Include="Layouts\TillidInvoice\images\favicon.png" />
+    <Content Include="Layouts\TillidInvoice\images\googlePlayEN.png" />
+    <Content Include="Layouts\TillidInvoice\images\logo.png" />
+    <Content Include="Layouts\TillidInvoice\images\outer_div_img.png" />
+    <Content Include="Layouts\TillidInvoice\images\right_border.png" />
+    <Content Include="Layouts\TillidInvoice\js\bootstrap.js" />
+    <Content Include="Layouts\TillidInvoice\js\bootstrap.min.js" />
+    <Content Include="Layouts\TillidInvoice\js\jquery-1.12.0.min.js" />
+    <Content Include="Layouts\TillidInvoice\js\jquery-ui.js" />
+    <Content Include="Layouts\TillidInvoice\js\npm.js" />
+    <Content Include="Layouts\TillidInvoice\js\script.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
